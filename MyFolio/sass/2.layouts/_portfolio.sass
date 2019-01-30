@@ -1,0 +1,32 @@
+#portfolio
+  .row
+    margin: 0
+  .col-md-6
+    padding: 0
+
+  .portfolio-content
+    position: relative
+    background: $gray
+    .arrow-down
+      +center(x)
+      left: calc(50% - 1rem)
+      width: 1.5rem
+      height: 1.5rem
+      background: $gray
+      bottom: -0.75rem
+      +transform(rotate(45deg))
+      z-index: 9
+
+      i
+        font-size: 2rem
+        +transform(rotate(-45deg))
+        margin-left: 5px
+        color: $gray-7
+
+    .btn-secondary
+      margin-top: 2rem
+      padding-top: 0.3rem
+      padding-bottom: 0.3rem
+      &:before, &:after
+        height: 2.4rem
+    
